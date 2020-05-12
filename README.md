@@ -1,3 +1,15 @@
+#About
+This code will:
+- Go over a list of 999 Dr Laura "Call of the Day" episodes, 
+- Download each episode, 
+- Analyse the duration of overlapped voices in the episode (using pyannote),
+- Save results from each episode,
+- Save a global counter,
+- Print the averages from the global counter,
+- Delete the episode.
+
+
+
 #Setup
 ```
 virtualenv venv

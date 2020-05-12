@@ -4,3 +4,4 @@ pyannote-audio/
 venv/
 counter.pkl
 data/results/*.rttm
+.idea/
