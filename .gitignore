@@ -1,0 +1,6 @@
+audio_data_tests/
+model_comparison.py
+pyannote-audio/
+venv/
+counter.pkl
+data/results/*.rttm
