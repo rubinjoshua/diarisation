@@ -5,7 +5,6 @@ from os import getcwd, remove
 from tinytag import TinyTag
 from pydub import AudioSegment
 import pickle
-import atexit
 
 
 HEADER = 15
@@ -82,12 +81,11 @@ def save_counter(c):
 
 def main():
     c = load_counter()
-    atexit.register(save_counter, c)
     try:
         with open(episodes, "r") as f:
             ep_urls = f.read().split()
         for i, url in enumerate(ep_urls):
-            if i < c.files_seen:
+            if i < c.files_seen - 1:
                 continue
             mp3 = join(audio_path, basename(url))
             wav = str(mp3.split('.')[0]) + ".wav"
@@ -97,7 +95,9 @@ def main():
             if wav_duration(wav) > (HEADER + FOOTER):
                 c = save_and_print_results(i, wav, c)
             remove(wav)
-    except Exception:
+            save_counter(c)
+    except Exception as e:
+        print(str(e))
         save_counter(c)
 
 

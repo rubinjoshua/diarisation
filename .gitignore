@@ -2,6 +2,7 @@ audio_data_tests/
 model_comparison.py
 pyannote-audio/
 venv/
-counter.pkl
-data/results/*.rttm
+data/audio/*.wav
+data/audio/*.mp3
+data/audio/*.tmp
 .idea/
