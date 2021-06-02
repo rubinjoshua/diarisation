@@ -74,7 +74,7 @@ tinytag==1.4.0
 torch==1.5.0
 tqdm==4.46.0
 typing-extensions==3.7.4.2
-urllib3==1.25.9
+urllib3==1.26.5
 wcwidth==0.1.9
 Werkzeug==1.0.1
 wget==3.2
