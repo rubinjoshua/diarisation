@@ -28,7 +28,7 @@ MarkupSafe==1.1.1
 matplotlib==3.2.1
 mpmath==1.1.0
 numba==0.49.0
-numpy==1.18.4
+numpy==1.22.0
 oauthlib==3.1.0
 optuna==1.3.0
 pandas==1.0.3
